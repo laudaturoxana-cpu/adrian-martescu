@@ -96,24 +96,26 @@ export default function ProgramPage() {
                 Înțelegi de ce viața ta arată cum arată. Primești instrumentele să o schimbi. Și nu rămâi singur/ă în acest proces.
               </p>
 
-              <a
-                href="[LINK_CALENDLY]"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block rounded-sm px-8 py-4 text-sm font-medium transition-all duration-200 hover:-translate-y-0.5"
-                style={{
-                  background: "#B8892A",
-                  color: "#F4EFE4",
-                  fontFamily: "var(--font-jost), sans-serif",
-                  letterSpacing: "0.05em",
-                  borderRadius: "2px",
-                }}
-              >
-                Vreau să știu mai mult — Rezervă o discuție
-              </a>
-              <p className="mt-3 text-xs" style={{ color: "#9A8F7A", fontFamily: "var(--font-jost), sans-serif" }}>
-                Discuție gratuită de 30 de minute. Fără obligații.
-              </p>
+              <div className="flex flex-col items-center sm:items-start gap-3">
+                <a
+                  href="[LINK_CALENDLY]"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full text-center rounded-sm px-8 py-4 text-sm font-medium transition-all duration-200 hover:-translate-y-0.5 sm:w-auto"
+                  style={{
+                    background: "#B8892A",
+                    color: "#F4EFE4",
+                    fontFamily: "var(--font-jost), sans-serif",
+                    letterSpacing: "0.05em",
+                    borderRadius: "2px",
+                  }}
+                >
+                  Vreau să știu mai mult — Rezervă o discuție
+                </a>
+                <p className="text-xs text-center sm:text-left" style={{ color: "#9A8F7A", fontFamily: "var(--font-jost), sans-serif" }}>
+                  Discuție gratuită de 30 de minute. Fără obligații.
+                </p>
+              </div>
             </AnimatedSection>
           </div>
         </section>

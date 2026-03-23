@@ -90,10 +90,10 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-4 sm:flex-row">
+            <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-start">
               <Link
                 href="/webinar"
-                className="inline-block px-8 py-4 text-sm font-medium transition-all duration-200 hover:-translate-y-0.5"
+                className="block w-full text-center px-8 py-4 text-sm font-medium transition-all duration-200 hover:-translate-y-0.5 sm:w-auto"
                 style={{
                   background: "#B8892A",
                   color: "#F4EFE4",
@@ -106,7 +106,7 @@ export default function HomePage() {
               </Link>
               <a
                 href="#cum-functioneaza"
-                className="inline-block px-8 py-4 text-sm font-medium transition-all duration-200 hover:-translate-y-0.5"
+                className="block w-full text-center px-8 py-4 text-sm font-medium transition-all duration-200 hover:-translate-y-0.5 sm:w-auto"
                 style={{
                   border: "1px solid rgba(184,137,42,0.4)",
                   color: "#5C5545",
@@ -120,7 +120,7 @@ export default function HomePage() {
             </div>
 
             {/* Trust badges */}
-            <div className="mt-10 flex flex-wrap gap-6">
+            <div className="mt-10 flex flex-wrap justify-center gap-6 sm:justify-start">
               {[
                 { icon: "✦", text: "Webinar 100% gratuit" },
                 { icon: "✦", text: "Fără promisiuni false" },
