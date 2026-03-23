@@ -170,7 +170,7 @@ export default function HomePage() {
                 <div
                   className="pain-card h-full rounded-sm p-6 transition-all duration-300 hover:-translate-y-1"
                   style={{
-                    background: "#F4EFE4",
+                    background: "#1A1814",
                     border: "1px solid rgba(184,137,42,0.15)",
                   }}
                 >
@@ -180,7 +180,7 @@ export default function HomePage() {
                       fontFamily: "var(--font-cormorant), serif",
                       fontStyle: "italic",
                       fontWeight: 400,
-                      color: "#1E1B15",
+                      color: "#E8DFC8",
                       fontSize: "18px",
                     }}
                   >
