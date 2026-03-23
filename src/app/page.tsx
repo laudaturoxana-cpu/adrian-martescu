@@ -435,7 +435,7 @@ export default function HomePage() {
       </section>
 
       {/* DESPRE ADRIAN */}
-      <section id="despre" style={{ background: "#F4EFE4" }} className="py-12 md:py-20">
+      <section id="despre" style={{ background: "#1A1814" }} className="py-12 md:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="grid items-center gap-10 lg:gap-16 lg:grid-cols-2">
             <AnimatedSection>
@@ -446,17 +446,17 @@ export default function HomePage() {
                   fontFamily: "var(--font-cormorant), serif",
                   fontWeight: 400,
                   fontSize: "clamp(32px, 4vw, 44px)",
-                  color: "#1E1B15",
+                  color: "#F4EFE4",
                 }}
               >
                 Nu predau teorii.
                 <br />
                 <em style={{ fontStyle: "italic", color: "#B8892A" }}>Predau ce am trăit.</em>
               </h2>
-              <p className="mb-6 text-sm leading-relaxed" style={{ fontFamily: "var(--font-jost), sans-serif", color: "#5C5545" }}>
+              <p className="mb-6 text-sm leading-relaxed" style={{ fontFamily: "var(--font-jost), sans-serif", color: "#9A8F7A" }}>
                 Sunt Adrian Martescu și am petrecut aproape 6 ani aprofundând și trăind ceea ce acum îți ofer ție. Modelul Variantelor al lui Vadim Zeland, Alchimia Internă Taoistă, tehnicile lui David R. Hawkins și filozofia lui Alan Watts nu sunt pentru mine concepte citite — sunt instrumente cu care mi-am reconstruit propria viață.
               </p>
-              <p className="mb-10 text-sm leading-relaxed" style={{ fontFamily: "var(--font-jost), sans-serif", color: "#5C5545" }}>
+              <p className="mb-10 text-sm leading-relaxed" style={{ fontFamily: "var(--font-jost), sans-serif", color: "#9A8F7A" }}>
                 Nu am o certificare clasică. Am ceva mai rar: experiența directă, autodidactă, a unui om care a căutat cu adevărat — și a găsit. Ceea ce îți ofer nu vine din manuale. Vine din interior.
               </p>
 
@@ -468,7 +468,7 @@ export default function HomePage() {
                 ].map((item) => (
                   <div key={item.text} className="flex items-center gap-3">
                     <span style={{ color: "#B8892A", fontSize: "14px" }}>{item.icon}</span>
-                    <span className="text-sm" style={{ fontFamily: "var(--font-jost), sans-serif", color: "#5C5545" }}>{item.text}</span>
+                    <span className="text-sm" style={{ fontFamily: "var(--font-jost), sans-serif", color: "#C8B89A" }}>{item.text}</span>
                   </div>
                 ))}
               </div>
@@ -476,7 +476,7 @@ export default function HomePage() {
 
             <AnimatedSection delay={200}>
               <div className="hidden lg:flex items-center justify-center">
-                <div className="relative" style={{ opacity: 0.3 }}>
+                <div className="relative" style={{ opacity: 0.18 }}>
                   <svg width="280" height="280" viewBox="0 0 360 360" fill="none" aria-hidden="true">
                     <circle cx="180" cy="180" r="170" stroke="#B8892A" strokeWidth="1" />
                     <circle cx="180" cy="180" r="130" stroke="#B8892A" strokeWidth="0.8" strokeDasharray="5 7" />
@@ -488,9 +488,9 @@ export default function HomePage() {
                   </svg>
                   <div
                     className="absolute inset-0 flex items-center justify-center"
-                    style={{ fontFamily: "var(--font-cormorant), serif", fontStyle: "italic", color: "#B8892A", fontSize: "16px", opacity: 2 }}
+                    style={{ fontFamily: "var(--font-cormorant), serif", fontStyle: "italic", color: "#B8892A", fontSize: "16px" }}
                   >
-                    <span style={{ opacity: 1 }}>Foto Adrian Martescu</span>
+                    <span style={{ opacity: 0.6 }}>Foto Adrian Martescu</span>
                   </div>
                 </div>
               </div>
@@ -500,7 +500,7 @@ export default function HomePage() {
       </section>
 
       {/* PROCESUL */}
-      <section id="proces" style={{ background: "#E8DFC8" }} className="py-12 md:py-20">
+      <section id="proces" style={{ background: "#252018" }} className="py-12 md:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <AnimatedSection>
             <div className="overline mb-4">Pașii</div>
@@ -510,7 +510,7 @@ export default function HomePage() {
                 fontFamily: "var(--font-cormorant), serif",
                 fontWeight: 400,
                 fontSize: "clamp(32px, 4vw, 44px)",
-                color: "#1E1B15",
+                color: "#F4EFE4",
               }}
             >
               Simplu. Fără complicații.
@@ -548,18 +548,18 @@ export default function HomePage() {
                       fontSize: "clamp(36px, 5vw, 52px)",
                       fontWeight: 300,
                       color: "#B8892A",
-                      opacity: 0.4,
+                      opacity: 0.55,
                       lineHeight: 1,
                     }}
                   >
                     {step.nr}
                   </span>
                   <h3
-                    style={{ fontFamily: "var(--font-cormorant), serif", fontWeight: 500, fontSize: "20px", color: "#1E1B15" }}
+                    style={{ fontFamily: "var(--font-cormorant), serif", fontWeight: 500, fontSize: "20px", color: "#E8DFC8" }}
                   >
                     {step.title}
                   </h3>
-                  <p className="text-sm leading-relaxed" style={{ fontFamily: "var(--font-jost), sans-serif", color: "#5C5545" }}>
+                  <p className="text-sm leading-relaxed" style={{ fontFamily: "var(--font-jost), sans-serif", color: "#9A8F7A" }}>
                     {step.text}
                   </p>
                 </div>
@@ -573,9 +573,9 @@ export default function HomePage() {
               style={{
                 fontFamily: "var(--font-cormorant), serif",
                 fontStyle: "italic",
-                color: "#9A8F7A",
+                color: "#7A7060",
                 fontSize: "16px",
-                borderLeft: "3px solid rgba(184,137,42,0.3)",
+                borderLeft: "3px solid rgba(184,137,42,0.35)",
                 paddingLeft: "16px",
               }}
             >

@@ -314,7 +314,7 @@ export default function ProgramPage() {
         </section>
 
         {/* PROCESUL */}
-        <section style={{ background: "#E8DFC8" }} className="py-12 md:py-20 px-4 sm:px-6">
+        <section style={{ background: "#1A1814" }} className="py-12 md:py-20 px-4 sm:px-6">
           <div className="mx-auto max-w-5xl">
             <AnimatedSection>
               <h2
@@ -323,7 +323,7 @@ export default function ProgramPage() {
                   fontFamily: "var(--font-cormorant), serif",
                   fontWeight: 400,
                   fontSize: "clamp(28px, 4vw, 40px)",
-                  color: "#1E1B15",
+                  color: "#F4EFE4",
                 }}
               >
                 Primești. Aplici. Observi.
@@ -342,14 +342,14 @@ export default function ProgramPage() {
                         fontSize: "clamp(32px, 4vw, 44px)",
                         fontWeight: 300,
                         color: "#B8892A",
-                        opacity: 0.4,
+                        opacity: 0.55,
                         lineHeight: 1,
                         flexShrink: 0,
                       }}
                     >
                       {step.nr}
                     </span>
-                    <p className="text-sm leading-relaxed pt-2" style={{ fontFamily: "var(--font-jost), sans-serif", color: "#5C5545" }}>
+                    <p className="text-sm leading-relaxed pt-2" style={{ fontFamily: "var(--font-jost), sans-serif", color: "#9A8F7A" }}>
                       {step.text}
                     </p>
                   </div>
