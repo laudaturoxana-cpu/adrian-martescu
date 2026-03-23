@@ -35,7 +35,7 @@ export default function WebinarPage() {
 
       <main>
         {/* HERO */}
-        <section className="py-20 px-6">
+        <section className="py-12 md:py-20 px-4 sm:px-6">
           <div className="mx-auto max-w-4xl">
             <AnimatedSection>
               <div className="mb-4">
@@ -59,7 +59,7 @@ export default function WebinarPage() {
                 style={{
                   fontFamily: "var(--font-cormorant), serif",
                   fontWeight: 300,
-                  fontSize: "clamp(36px, 6vw, 60px)",
+                  fontSize: "clamp(28px, 6vw, 60px)",
                   color: "#1E1B15",
                 }}
               >
@@ -74,7 +74,7 @@ export default function WebinarPage() {
                 90 de minute în care înțelegi mecanismul prin care îți creezi propria realitate — și primești primul instrument concret ca să schimbi asta.
               </p>
 
-              <div className="grid gap-5 sm:grid-cols-3 mb-16">
+              <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-10 md:mb-16">
                 {[
                   "De ce efortul singur nu schimbă nimic — și ce funcționează cu adevărat",
                   "Cum să dai jos negativitatea zilei de pe tine cum dai jos o haină",
@@ -93,7 +93,7 @@ export default function WebinarPage() {
             {/* FORMULAR */}
             <AnimatedSection delay={200}>
               <div
-                className="mx-auto max-w-lg rounded-sm p-8 md:p-10"
+                className="mx-auto max-w-lg rounded-sm p-5 sm:p-8 md:p-10"
                 style={{ background: "#1A1814" }}
               >
                 <p

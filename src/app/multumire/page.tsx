@@ -68,7 +68,7 @@ export default function MultumirePage() {
             href="https://chat.whatsapp.com/[LINK_GRUP_WHATSAPP]"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 rounded-full px-8 py-4 text-base font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg mb-4"
+            className="inline-flex items-center gap-3 rounded-full px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg mb-4"
             style={{
               background: "#25D366",
               color: "#ffffff",

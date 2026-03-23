@@ -32,7 +32,7 @@ export default function Header() {
         borderBottom: scrolled ? "1px solid rgba(184,137,42,0.15)" : "none",
       }}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 sm:px-6 py-3 sm:py-4">
         <Link href="/" aria-label="Acasă">
           <LogoFull />
         </Link>
@@ -98,7 +98,7 @@ export default function Header() {
       {/* Mobile menu */}
       {menuOpen && (
         <div
-          className="border-t px-6 py-5 lg:hidden"
+          className="border-t px-4 sm:px-6 py-4 sm:py-5 lg:hidden"
           style={{ background: "rgba(244,239,228,0.97)", borderColor: "rgba(184,137,42,0.15)" }}
         >
           <nav className="flex flex-col gap-4">

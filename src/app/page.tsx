@@ -40,7 +40,7 @@ export default function HomePage() {
       <Header />
 
       {/* HERO */}
-      <section className="relative min-h-screen overflow-hidden pt-24 pb-20" style={{ background: "#F4EFE4" }}>
+      <section className="relative min-h-screen overflow-hidden pt-16 pb-12 md:pt-24 md:pb-20" style={{ background: "#F4EFE4" }}>
         {/* Portal ornament background */}
         <div className="portal-pulse pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/4 hidden lg:block">
           <svg width="560" height="560" viewBox="0 0 360 360" fill="none" aria-hidden="true">
@@ -54,7 +54,7 @@ export default function HomePage() {
           </svg>
         </div>
 
-        <div className="relative mx-auto max-w-6xl px-6 pt-16">
+        <div className="relative mx-auto max-w-6xl px-4 sm:px-6 pt-8 sm:pt-12 md:pt-16">
           <AnimatedSection>
             <div className="overline mb-6">Dirijarea Realității</div>
 
@@ -63,7 +63,7 @@ export default function HomePage() {
               style={{
                 fontFamily: "var(--font-cormorant), serif",
                 fontWeight: 300,
-                fontSize: "clamp(48px, 7vw, 72px)",
+                fontSize: "clamp(38px, 7vw, 72px)",
                 color: "#1E1B15",
               }}
             >
@@ -142,12 +142,12 @@ export default function HomePage() {
       </section>
 
       {/* TE RECUNOȘTI? */}
-      <section id="te-recunosi" style={{ background: "#E8DFC8" }} className="py-20">
-        <div className="mx-auto max-w-6xl px-6">
+      <section id="te-recunosi" style={{ background: "#E8DFC8" }} className="py-12 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <AnimatedSection>
             <div className="overline mb-4">Pentru cine sunt</div>
             <h2
-              className="mb-12 max-w-2xl"
+              className="mb-8 md:mb-12 max-w-2xl"
               style={{
                 fontFamily: "var(--font-cormorant), serif",
                 fontWeight: 400,
@@ -208,12 +208,12 @@ export default function HomePage() {
       </section>
 
       {/* CE SE SCHIMBĂ CONCRET */}
-      <section id="cum-functioneaza" style={{ background: "#F4EFE4" }} className="py-20">
-        <div className="mx-auto max-w-6xl px-6">
+      <section id="cum-functioneaza" style={{ background: "#F4EFE4" }} className="py-12 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <AnimatedSection>
             <div className="overline mb-4">Ce primești</div>
             <h2
-              className="mb-14 max-w-xl"
+              className="mb-8 md:mb-14 max-w-xl"
               style={{
                 fontFamily: "var(--font-cormorant), serif",
                 fontWeight: 400,
@@ -225,7 +225,7 @@ export default function HomePage() {
             </h2>
           </AnimatedSection>
 
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-5 sm:gap-6 grid-cols-1 md:grid-cols-3">
             {[
               {
                 title: "Luni dimineața nu va mai fi cea mai grea parte a săptămânii",
@@ -272,12 +272,12 @@ export default function HomePage() {
       </section>
 
       {/* SERVICII */}
-      <section id="servicii" style={{ background: "#E8DFC8" }} className="py-20">
-        <div className="mx-auto max-w-6xl px-6">
+      <section id="servicii" style={{ background: "#E8DFC8" }} className="py-12 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <AnimatedSection>
             <div className="overline mb-4">Cum lucrez</div>
             <h2
-              className="mb-14"
+              className="mb-8 md:mb-14"
               style={{
                 fontFamily: "var(--font-cormorant), serif",
                 fontWeight: 400,
@@ -289,7 +289,7 @@ export default function HomePage() {
             </h2>
           </AnimatedSection>
 
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-5 sm:gap-6 grid-cols-1 md:grid-cols-3">
             {/* Card 1 */}
             <AnimatedSection delay={0}>
               <div
@@ -322,9 +322,6 @@ export default function HomePage() {
                 <div className="mb-6 flex gap-6">
                   <span className="text-xs" style={{ fontFamily: "var(--font-jost), sans-serif", color: "#9A8F7A" }}>
                     Durata: 4 săptămâni
-                  </span>
-                  <span className="text-sm font-medium" style={{ fontFamily: "var(--font-jost), sans-serif", color: "#B8892A" }}>
-                    397 RON
                   </span>
                 </div>
                 <Link
@@ -438,9 +435,9 @@ export default function HomePage() {
       </section>
 
       {/* DESPRE ADRIAN */}
-      <section id="despre" style={{ background: "#F4EFE4" }} className="py-20">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="grid items-center gap-16 lg:grid-cols-2">
+      <section id="despre" style={{ background: "#F4EFE4" }} className="py-12 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="grid items-center gap-10 lg:gap-16 lg:grid-cols-2">
             <AnimatedSection>
               <div className="overline mb-4">Cine sunt</div>
               <h2
@@ -478,9 +475,9 @@ export default function HomePage() {
             </AnimatedSection>
 
             <AnimatedSection delay={200}>
-              <div className="flex items-center justify-center">
+              <div className="hidden lg:flex items-center justify-center">
                 <div className="relative" style={{ opacity: 0.3 }}>
-                  <svg width="340" height="340" viewBox="0 0 360 360" fill="none" aria-hidden="true">
+                  <svg width="280" height="280" viewBox="0 0 360 360" fill="none" aria-hidden="true">
                     <circle cx="180" cy="180" r="170" stroke="#B8892A" strokeWidth="1" />
                     <circle cx="180" cy="180" r="130" stroke="#B8892A" strokeWidth="0.8" strokeDasharray="5 7" />
                     <circle cx="180" cy="180" r="90" stroke="#B8892A" strokeWidth="1" />
@@ -503,12 +500,12 @@ export default function HomePage() {
       </section>
 
       {/* PROCESUL */}
-      <section id="proces" style={{ background: "#E8DFC8" }} className="py-20">
-        <div className="mx-auto max-w-6xl px-6">
+      <section id="proces" style={{ background: "#E8DFC8" }} className="py-12 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <AnimatedSection>
             <div className="overline mb-4">Pașii</div>
             <h2
-              className="mb-14"
+              className="mb-8 md:mb-14"
               style={{
                 fontFamily: "var(--font-cormorant), serif",
                 fontWeight: 400,
@@ -520,7 +517,7 @@ export default function HomePage() {
             </h2>
           </AnimatedSection>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             {[
               {
                 nr: "01",
@@ -548,7 +545,7 @@ export default function HomePage() {
                   <span
                     style={{
                       fontFamily: "var(--font-cormorant), serif",
-                      fontSize: "52px",
+                      fontSize: "clamp(36px, 5vw, 52px)",
                       fontWeight: 300,
                       color: "#B8892A",
                       opacity: 0.4,
@@ -589,12 +586,12 @@ export default function HomePage() {
       </section>
 
       {/* TESTIMONIALE */}
-      <section id="testimoniale" style={{ background: "#F4EFE4" }} className="py-20">
-        <div className="mx-auto max-w-6xl px-6">
+      <section id="testimoniale" style={{ background: "#F4EFE4" }} className="py-12 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <AnimatedSection>
             <div className="overline mb-4">Ce spun cei care au parcurs programul</div>
             <h2
-              className="mb-14"
+              className="mb-8 md:mb-14"
               style={{
                 fontFamily: "var(--font-cormorant), serif",
                 fontWeight: 400,
@@ -606,15 +603,15 @@ export default function HomePage() {
             </h2>
           </AnimatedSection>
 
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-5 sm:gap-6 grid-cols-1 md:grid-cols-3">
             <AnimatedSection delay={0}>
               <div
-                className="flex h-full flex-col rounded-sm p-7"
+                className="flex h-full flex-col rounded-sm p-6 sm:p-7"
                 style={{ background: "#1A1814" }}
               >
                 <p
                   className="mb-6 flex-1 leading-relaxed"
-                  style={{ fontFamily: "var(--font-cormorant), serif", fontStyle: "italic", fontSize: "18px", color: "#E8DFC8" }}
+                  style={{ fontFamily: "var(--font-cormorant), serif", fontStyle: "italic", fontSize: "clamp(15px, 2.5vw, 18px)", color: "#E8DFC8" }}
                 >
                   &ldquo;Am trecut de la frica generală de problemele de sănătate la înțelegerea deplină că pot trece prin ele. Pas cu pas am simțit că ține de unde îmi îndrept atenția. M-am simțit susținută cu multă răbdare, compasiune și profesionalism. Starea generală de sănătate s-a îmbunătățit.&rdquo;
                 </p>
@@ -631,12 +628,12 @@ export default function HomePage() {
 
             <AnimatedSection delay={120}>
               <div
-                className="flex h-full flex-col rounded-sm p-7"
+                className="flex h-full flex-col rounded-sm p-6 sm:p-7"
                 style={{ background: "#1A1814" }}
               >
                 <p
                   className="mb-6 flex-1 leading-relaxed"
-                  style={{ fontFamily: "var(--font-cormorant), serif", fontStyle: "italic", fontSize: "22px", color: "#E8DFC8" }}
+                  style={{ fontFamily: "var(--font-cormorant), serif", fontStyle: "italic", fontSize: "clamp(18px, 3vw, 22px)", color: "#E8DFC8" }}
                 >
                   &ldquo;Uitasem să fiu eu. Uitasem să fiu mamă.&rdquo;
                 </p>
@@ -653,7 +650,7 @@ export default function HomePage() {
 
             <AnimatedSection delay={240}>
               <div
-                className="flex h-full flex-col items-center justify-center rounded-sm p-7 text-center"
+                className="flex h-full flex-col items-center justify-center rounded-sm p-6 sm:p-7 text-center"
                 style={{ background: "#1A1814", border: "1px dashed rgba(184,137,42,0.3)" }}
               >
                 <p className="mb-6 text-sm" style={{ color: "#9A8F7A", fontFamily: "var(--font-jost), sans-serif" }}>
@@ -673,12 +670,12 @@ export default function HomePage() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" style={{ background: "#E8DFC8" }} className="py-20">
-        <div className="mx-auto max-w-3xl px-6">
+      <section id="faq" style={{ background: "#E8DFC8" }} className="py-12 md:py-20">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6">
           <AnimatedSection>
             <div className="overline mb-4">Întrebări frecvente</div>
             <h2
-              className="mb-12"
+              className="mb-8 md:mb-12"
               style={{
                 fontFamily: "var(--font-cormorant), serif",
                 fontWeight: 400,
@@ -701,8 +698,8 @@ export default function HomePage() {
       </section>
 
       {/* CONTACT */}
-      <section id="contact" style={{ background: "#F4EFE4" }} className="py-20">
-        <div className="mx-auto max-w-3xl px-6">
+      <section id="contact" style={{ background: "#F4EFE4" }} className="py-12 md:py-20">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6">
           <AnimatedSection>
             <div className="overline mb-4">Hai să vorbim</div>
             <h2

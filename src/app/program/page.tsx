@@ -46,7 +46,7 @@ export default function ProgramPage() {
 
       <main>
         {/* HERO */}
-        <section className="relative overflow-hidden py-24 px-6" style={{ background: "#F4EFE4" }}>
+        <section className="relative overflow-hidden py-14 md:py-24 px-4 sm:px-6" style={{ background: "#F4EFE4" }}>
           {/* Portal ornament */}
           <div className="portal-pulse pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/3 hidden lg:block" style={{ opacity: 0.07 }}>
             <svg width="500" height="500" viewBox="0 0 360 360" fill="none" aria-hidden="true">
@@ -119,7 +119,7 @@ export default function ProgramPage() {
         </section>
 
         {/* PENTRU CINE */}
-        <section style={{ background: "#E8DFC8" }} className="py-20 px-6">
+        <section style={{ background: "#E8DFC8" }} className="py-12 md:py-20 px-4 sm:px-6">
           <div className="mx-auto max-w-5xl">
             <AnimatedSection>
               <h2
@@ -155,7 +155,7 @@ export default function ProgramPage() {
         </section>
 
         {/* CE CONȚINE */}
-        <section style={{ background: "#F4EFE4" }} className="py-20 px-6">
+        <section style={{ background: "#F4EFE4" }} className="py-12 md:py-20 px-4 sm:px-6">
           <div className="mx-auto max-w-5xl">
             <AnimatedSection>
               <div className="overline mb-4">Structura programului</div>
@@ -172,7 +172,7 @@ export default function ProgramPage() {
               </h2>
             </AnimatedSection>
 
-            <div className="grid gap-6 md:grid-cols-3">
+            <div className="grid gap-5 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
               {[
                 {
                   nr: "01",
@@ -201,7 +201,7 @@ export default function ProgramPage() {
                     <span
                       style={{
                         fontFamily: "var(--font-cormorant), serif",
-                        fontSize: "44px",
+                        fontSize: "clamp(32px, 4vw, 44px)",
                         fontWeight: 300,
                         color: "#B8892A",
                         opacity: 0.4,
@@ -232,7 +232,7 @@ export default function ProgramPage() {
         </section>
 
         {/* CE PRIMEȘTI */}
-        <section style={{ background: "#E8DFC8" }} className="py-20 px-6">
+        <section style={{ background: "#E8DFC8" }} className="py-12 md:py-20 px-4 sm:px-6">
           <div className="mx-auto max-w-5xl">
             <AnimatedSection>
               <div className="overline mb-4">Inclus în program</div>
@@ -270,7 +270,7 @@ export default function ProgramPage() {
         </section>
 
         {/* TESTIMONIALE */}
-        <section style={{ background: "#F4EFE4" }} className="py-20 px-6">
+        <section style={{ background: "#F4EFE4" }} className="py-12 md:py-20 px-4 sm:px-6">
           <div className="mx-auto max-w-5xl">
             <AnimatedSection>
               <div className="overline mb-4">Ce spun participanții</div>
@@ -287,7 +287,7 @@ export default function ProgramPage() {
               </h2>
             </AnimatedSection>
 
-            <div className="grid gap-6 md:grid-cols-2">
+            <div className="grid gap-5 sm:gap-6 grid-cols-1 md:grid-cols-2">
               <AnimatedSection delay={0}>
                 <div className="rounded-sm p-7" style={{ background: "#1A1814" }}>
                   <p className="mb-6 leading-relaxed" style={{ fontFamily: "var(--font-cormorant), serif", fontStyle: "italic", fontSize: "18px", color: "#E8DFC8" }}>
@@ -312,7 +312,7 @@ export default function ProgramPage() {
         </section>
 
         {/* PROCESUL */}
-        <section style={{ background: "#E8DFC8" }} className="py-20 px-6">
+        <section style={{ background: "#E8DFC8" }} className="py-12 md:py-20 px-4 sm:px-6">
           <div className="mx-auto max-w-5xl">
             <AnimatedSection>
               <h2
@@ -327,7 +327,7 @@ export default function ProgramPage() {
                 Primești. Aplici. Observi.
               </h2>
 
-              <div className="grid gap-8 md:grid-cols-3">
+              <div className="grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-3">
                 {[
                   { nr: "1", text: "Participi la sesiunile live de 3 ori pe lună" },
                   { nr: "2", text: "Practici zilnic 15-20 de minute (meditații ghidate)" },
@@ -337,7 +337,7 @@ export default function ProgramPage() {
                     <span
                       style={{
                         fontFamily: "var(--font-cormorant), serif",
-                        fontSize: "44px",
+                        fontSize: "clamp(32px, 4vw, 44px)",
                         fontWeight: 300,
                         color: "#B8892A",
                         opacity: 0.4,
@@ -358,7 +358,7 @@ export default function ProgramPage() {
         </section>
 
         {/* INVESTIȚIA */}
-        <section style={{ background: "#F4EFE4" }} className="py-20 px-6">
+        <section style={{ background: "#F4EFE4" }} className="py-12 md:py-20 px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center">
             <AnimatedSection>
               <h2
@@ -402,7 +402,7 @@ export default function ProgramPage() {
         </section>
 
         {/* FAQ */}
-        <section style={{ background: "#E8DFC8" }} className="py-20 px-6">
+        <section style={{ background: "#E8DFC8" }} className="py-12 md:py-20 px-4 sm:px-6">
           <div className="mx-auto max-w-3xl">
             <AnimatedSection>
               <h2
@@ -424,7 +424,7 @@ export default function ProgramPage() {
         </section>
 
         {/* CTA FINAL */}
-        <section style={{ background: "#1A1814" }} className="py-24 px-6 text-center">
+        <section style={{ background: "#1A1814" }} className="py-14 md:py-24 px-4 sm:px-6 text-center">
           <div className="mx-auto max-w-2xl">
             <AnimatedSection>
               <h2

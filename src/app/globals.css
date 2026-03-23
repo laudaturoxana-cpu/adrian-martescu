@@ -32,6 +32,7 @@ body {
   color: var(--text-primar);
   font-family: 'Jost', sans-serif;
   line-height: 1.7;
+  overflow-x: hidden;
 }
 
 /* Fade-up animation */
