@@ -500,7 +500,7 @@ export default function HomePage() {
       </section>
 
       {/* PROCESUL */}
-      <section id="proces" style={{ background: "#252018" }} className="py-12 md:py-20">
+      <section id="proces" style={{ background: "#E8DFC8" }} className="py-12 md:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <AnimatedSection>
             <div className="overline mb-4">Pașii</div>
@@ -510,7 +510,7 @@ export default function HomePage() {
                 fontFamily: "var(--font-cormorant), serif",
                 fontWeight: 400,
                 fontSize: "clamp(32px, 4vw, 44px)",
-                color: "#F4EFE4",
+                color: "#1E1B15",
               }}
             >
               Simplu. Fără complicații.
@@ -548,18 +548,18 @@ export default function HomePage() {
                       fontSize: "clamp(36px, 5vw, 52px)",
                       fontWeight: 300,
                       color: "#B8892A",
-                      opacity: 0.55,
+                      opacity: 0.4,
                       lineHeight: 1,
                     }}
                   >
                     {step.nr}
                   </span>
                   <h3
-                    style={{ fontFamily: "var(--font-cormorant), serif", fontWeight: 500, fontSize: "20px", color: "#E8DFC8" }}
+                    style={{ fontFamily: "var(--font-cormorant), serif", fontWeight: 500, fontSize: "20px", color: "#1E1B15" }}
                   >
                     {step.title}
                   </h3>
-                  <p className="text-sm leading-relaxed" style={{ fontFamily: "var(--font-jost), sans-serif", color: "#9A8F7A" }}>
+                  <p className="text-sm leading-relaxed" style={{ fontFamily: "var(--font-jost), sans-serif", color: "#5C5545" }}>
                     {step.text}
                   </p>
                 </div>
@@ -573,9 +573,9 @@ export default function HomePage() {
               style={{
                 fontFamily: "var(--font-cormorant), serif",
                 fontStyle: "italic",
-                color: "#7A7060",
+                color: "#9A8F7A",
                 fontSize: "16px",
-                borderLeft: "3px solid rgba(184,137,42,0.35)",
+                borderLeft: "3px solid rgba(184,137,42,0.3)",
                 paddingLeft: "16px",
               }}
             >
