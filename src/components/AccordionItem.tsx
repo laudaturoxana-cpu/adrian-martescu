@@ -5,9 +5,10 @@ import { useState } from "react";
 interface AccordionItemProps {
   question: string;
   answer: string;
+  dark?: boolean;
 }
 
-export default function AccordionItem({ question, answer }: AccordionItemProps) {
+export default function AccordionItem({ question, answer, dark = false }: AccordionItemProps) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -22,7 +23,7 @@ export default function AccordionItem({ question, answer }: AccordionItemProps) 
           style={{
             fontFamily: "var(--font-cormorant), serif",
             fontWeight: 500,
-            color: "#1E1B15",
+            color: dark ? "#E8DFC8" : "#1E1B15",
             fontSize: "18px",
           }}
         >
@@ -48,7 +49,7 @@ export default function AccordionItem({ question, answer }: AccordionItemProps) 
       >
         <p
           className="mt-3 text-sm leading-relaxed"
-          style={{ fontFamily: "var(--font-jost), sans-serif", color: "#5C5545" }}
+          style={{ fontFamily: "var(--font-jost), sans-serif", color: dark ? "#9A8F7A" : "#5C5545" }}
         >
           {answer}
         </p>
