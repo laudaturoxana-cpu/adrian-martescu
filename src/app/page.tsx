@@ -451,27 +451,41 @@ export default function HomePage() {
               >
                 Nu predau teorii.
                 <br />
-                <em style={{ fontStyle: "italic", color: "#B8892A" }}>Predau ce am trăit.</em>
+                <em style={{ fontStyle: "italic", color: "#B8892A" }}>Predau ceea ce am trăit.</em>
               </h2>
               <p className="mb-6 text-sm leading-relaxed" style={{ fontFamily: "var(--font-jost), sans-serif", color: "#9A8F7A" }}>
-                Sunt Adrian Martescu și am petrecut aproape 6 ani aprofundând și trăind ceea ce acum îți ofer ție. Modelul Variantelor al lui Vadim Zeland, Alchimia Internă Taoistă, tehnicile lui David R. Hawkins și filozofia lui Alan Watts nu sunt pentru mine concepte citite — sunt instrumente cu care mi-am reconstruit propria viață.
+                Sunt Adrian Mărtescu, iar ultimii opt ani i-am petrecut aprofundând și experimentând ceea ce acum împărtășesc cu tine. Modelul Variantelor al lui Vadim Zeland, Alchimia Internă Taoistă, metodele lui David R. Hawkins și filozofia vie a lui Alan Watts nu sunt pentru mine doar concepte citite — ci instrumente prin care mi-am reconstruit viața din interior spre exterior.
               </p>
               <p className="mb-10 text-sm leading-relaxed" style={{ fontFamily: "var(--font-jost), sans-serif", color: "#9A8F7A" }}>
-                Nu am o certificare clasică. Am ceva mai rar: experiența directă, autodidactă, a unui om care a căutat cu adevărat — și a găsit. Ceea ce îți ofer nu vine din manuale. Vine din interior.
+                Nu am o certificare clasică. Am ceva mai valoros: experiența directă a unui om care a căutat cu adevărat — și a găsit. Tot ceea ce ofer vine din practică, observație și transformare personală, nu din manuale.
               </p>
 
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4 mb-8">
                 {[
-                  { icon: "◈", text: "6 ani de practică și studiu" },
-                  { icon: "◈", text: "Sistem în 3 trepte, aplicabil imediat" },
-                  { icon: "◈", text: "Susținere pe tot parcursul programului" },
-                ].map((item) => (
-                  <div key={item.text} className="flex items-center gap-3">
-                    <span style={{ color: "#B8892A", fontSize: "14px" }}>{item.icon}</span>
-                    <span className="text-sm" style={{ fontFamily: "var(--font-jost), sans-serif", color: "#C8B89A" }}>{item.text}</span>
+                  "8 ani de practică și studiu continuu",
+                  "Sistem în 3 trepte, ușor de aplicat în viața de zi cu zi",
+                  "Ghidare personală și susținere pe tot parcursul programului",
+                ].map((text) => (
+                  <div key={text} className="flex items-start gap-3">
+                    <span style={{ color: "#B8892A", fontSize: "14px", flexShrink: 0, marginTop: "2px" }}>✦</span>
+                    <span className="text-sm" style={{ fontFamily: "var(--font-jost), sans-serif", color: "#C8B89A" }}>{text}</span>
                   </div>
                 ))}
               </div>
+
+              <p
+                className="text-sm leading-relaxed"
+                style={{
+                  fontFamily: "var(--font-cormorant), serif",
+                  fontStyle: "italic",
+                  color: "#7A7060",
+                  fontSize: "16px",
+                  borderLeft: "3px solid rgba(184,137,42,0.35)",
+                  paddingLeft: "16px",
+                }}
+              >
+                Tot ceea ce transmit este dovada că schimbarea este posibilă — din interior, pas cu pas.
+              </p>
             </AnimatedSection>
 
             <AnimatedSection delay={200}>
