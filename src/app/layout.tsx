@@ -19,12 +19,26 @@ const jost = Jost({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.adrianmartescu.ro"),
   title: "Adrian Martescu — Dirijarea Realității | Instrumente concrete pentru o viață care merge în direcția ta",
   description: "Practici concrete din Modelul Variantelor, Alchimia Internă Taoistă și tehnicile David R. Hawkins. Nu motivație — instrumente reale pentru viața ta de zi cu zi.",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   openGraph: {
     title: "Adrian Martescu — Dirijarea Realității",
     description: "Instrumente concrete pentru o viață care merge în direcția ta.",
+    url: "https://www.adrianmartescu.ro",
+    siteName: "Adrian Martescu",
     type: "website",
+    locale: "ro_RO",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Adrian Martescu — Dirijarea Realității",
+    description: "Instrumente concrete pentru o viață care merge în direcția ta.",
   },
 };
 

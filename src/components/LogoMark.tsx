@@ -25,7 +25,7 @@ export default function LogoMark({ size = 36, className = "" }: LogoMarkProps) {
   );
 }
 
-export function LogoFull({ className = "" }: { className?: string }) {
+export function LogoFull({ className = "", dark = false }: { className?: string; dark?: boolean }) {
   return (
     <div className={`flex items-center gap-3 ${className}`}>
       <LogoMark size={36} />
@@ -36,7 +36,7 @@ export function LogoFull({ className = "" }: { className?: string }) {
             fontSize: "18px",
             letterSpacing: "0.1em",
             textTransform: "uppercase",
-            color: "#1E1B15",
+            color: dark ? "#F4EFE4" : "#1E1B15",
             fontWeight: 400,
           }}
         >

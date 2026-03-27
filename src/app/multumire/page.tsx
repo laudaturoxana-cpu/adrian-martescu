@@ -17,7 +17,7 @@ function MultumireContent() {
       <header className="border-b px-4 sm:px-6 py-4" style={{ borderColor: "rgba(184,137,42,0.12)", background: "#1A1814" }}>
         <div className="mx-auto flex max-w-4xl items-center justify-between">
           <Link href="/">
-            <LogoFull />
+            <LogoFull dark />
           </Link>
         </div>
       </header>

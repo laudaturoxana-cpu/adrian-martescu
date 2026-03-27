@@ -44,7 +44,7 @@ export default function WebinarPage() {
       <header className="border-b px-4 sm:px-6 py-3 sm:py-4" style={{ borderColor: "rgba(184,137,42,0.15)", background: "#1A1814" }}>
         <div className="mx-auto flex max-w-4xl items-center justify-between">
           <Link href="/">
-            <LogoFull />
+            <LogoFull dark />
           </Link>
           <Link href="/" className="text-xs transition-colors duration-200" style={{ fontFamily: "var(--font-jost), sans-serif", color: "#7A7060" }}>
             ← Înapoi acasă
