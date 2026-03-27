@@ -9,6 +9,13 @@ import ContactForm from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Adrian Martescu — Dirijarea Realității | Instrumente concrete pentru o viață care merge în direcția ta",
   description: "Practici concrete din Modelul Variantelor, Alchimia Internă Taoistă și tehnicile David R. Hawkins. Nu motivație — instrumente reale pentru viața ta de zi cu zi.",
+  alternates: { canonical: "https://www.adrianmartescu.ro" },
+  openGraph: {
+    title: "Adrian Martescu — Dirijarea Realității",
+    description: "Instrumente concrete pentru o viață care merge în direcția ta.",
+    url: "https://www.adrianmartescu.ro",
+    type: "website",
+  },
 };
 
 const faqItems = [

@@ -7,7 +7,23 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Alchimia Internă Taoistă — Program complet | Adrian Martescu",
-  description: "12 sesiuni live de practică și vindecare energetică. Transformă stresul, blocajele și frica în claritate, vitalitate și curaj.",
+  description: "12 sesiuni live de practică și vindecare energetică. Transformă stresul, blocajele și frica în claritate, vitalitate și curaj. 487 lei · Garanție 15 zile.",
+  keywords: [
+    "alchimie interna taoista",
+    "program online",
+    "vindecare energetica",
+    "Adrian Martescu",
+    "sesiuni live",
+    "meditatie taoista",
+    "dezvoltare personala",
+  ],
+  alternates: { canonical: "https://www.adrianmartescu.ro/program" },
+  openGraph: {
+    title: "Alchimia Internă Taoistă — Program cu Adrian Martescu",
+    description: "12 sesiuni live · Vindecare energetică · 487 lei · Garanție 15 zile.",
+    url: "https://www.adrianmartescu.ro/program",
+    type: "website",
+  },
 };
 
 const faqProgram = [
