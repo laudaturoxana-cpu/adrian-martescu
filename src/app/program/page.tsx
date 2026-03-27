@@ -112,7 +112,7 @@ export default function ProgramPage() {
 
               <div className="flex flex-col items-start gap-3">
                 <a
-                  href="[LINK_INSCRIERE]"
+                  href="https://wa.me/40765350339"
                   className="block w-full text-center rounded-sm px-8 py-4 text-sm font-medium transition-all duration-200 hover:-translate-y-0.5 sm:w-auto"
                   style={{
                     background: "#B8892A",
@@ -122,7 +122,7 @@ export default function ProgramPage() {
                     borderRadius: "2px",
                   }}
                 >
-                  Înscrie-te acum — 487 lei
+                  Înscrie-te — scrie pe WhatsApp →
                 </a>
                 <p className="text-xs" style={{ color: "#5C5545", fontFamily: "var(--font-jost), sans-serif" }}>
                   Garanție de returnare 15 zile. Fără risc.
@@ -580,7 +580,7 @@ export default function ProgramPage() {
               </p>
 
               <a
-                href="[LINK_INSCRIERE]"
+                href="https://wa.me/40765350339"
                 className="inline-block rounded-sm px-10 py-4 text-sm font-medium transition-all duration-200 hover:-translate-y-0.5"
                 style={{
                   background: "#B8892A",
@@ -590,7 +590,7 @@ export default function ProgramPage() {
                   borderRadius: "2px",
                 }}
               >
-                Înscrie-te acum — 487 lei →
+                Înscrie-te — scrie pe WhatsApp →
               </a>
               <p
                 className="mt-4 text-sm"
