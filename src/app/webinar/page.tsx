@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { LogoFull } from "@/components/LogoMark";
@@ -8,10 +9,33 @@ import Footer from "@/components/Footer";
 
 export default function WebinarPage() {
   const router = useRouter();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    router.push("/multumire");
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, phone }),
+      });
+      if (!res.ok) {
+        const data = await res.json();
+        setError(data.error || "Eroare. Încearcă din nou.");
+        setLoading(false);
+        return;
+      }
+      router.push("/multumire");
+    } catch {
+      setError("Eroare de rețea. Încearcă din nou.");
+      setLoading(false);
+    }
   };
 
   return (
@@ -472,6 +496,8 @@ export default function WebinarPage() {
                       type="text"
                       required
                       placeholder="Prenume și nume"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                       className="rounded-sm border px-4 py-3 text-sm outline-none"
                       style={{ background: "rgba(244,239,228,0.06)", border: "1px solid rgba(184,137,42,0.25)", color: "#F4EFE4", fontFamily: "var(--font-jost), sans-serif", borderRadius: "2px" }}
                     />
@@ -484,6 +510,8 @@ export default function WebinarPage() {
                       type="email"
                       required
                       placeholder="adresa@email.ro"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       className="rounded-sm border px-4 py-3 text-sm outline-none"
                       style={{ background: "rgba(244,239,228,0.06)", border: "1px solid rgba(184,137,42,0.25)", color: "#F4EFE4", fontFamily: "var(--font-jost), sans-serif", borderRadius: "2px" }}
                     />
@@ -495,16 +523,26 @@ export default function WebinarPage() {
                     <input
                       type="tel"
                       placeholder="07XX XXX XXX"
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
                       className="rounded-sm border px-4 py-3 text-sm outline-none"
                       style={{ background: "rgba(244,239,228,0.06)", border: "1px solid rgba(184,137,42,0.25)", color: "#F4EFE4", fontFamily: "var(--font-jost), sans-serif", borderRadius: "2px" }}
                     />
                   </div>
+
+                  {error && (
+                    <p className="text-xs text-center" style={{ color: "#E07070", fontFamily: "var(--font-jost), sans-serif" }}>
+                      {error}
+                    </p>
+                  )}
+
                   <button
                     type="submit"
-                    className="mt-2 block w-full text-center rounded-sm px-8 py-4 text-sm font-medium transition-all duration-200 hover:-translate-y-0.5"
+                    disabled={loading}
+                    className="mt-2 block w-full text-center rounded-sm px-8 py-4 text-sm font-medium transition-all duration-200 hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed"
                     style={{ background: "#B8892A", color: "#F4EFE4", fontFamily: "var(--font-jost), sans-serif", letterSpacing: "0.05em", borderRadius: "2px" }}
                   >
-                    Vreau să particip la webinar →
+                    {loading ? "Se înregistrează..." : "Vreau să particip la webinar →"}
                   </button>
                   <p className="text-center text-xs" style={{ color: "#7A7060", fontFamily: "var(--font-jost), sans-serif" }}>
                     Gratuit · Fără obligații · Locuri limitate
