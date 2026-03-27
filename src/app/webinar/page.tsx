@@ -108,8 +108,8 @@ export default function WebinarPage() {
               {/* Data + ora */}
               <div className="mb-10 flex flex-wrap justify-center gap-6">
                 {[
-                  { icon: "📅", text: "Data: x aprilie" },
-                  { icon: "⏰", text: "Ora: y:00" },
+                  { icon: "📅", text: "Data: 20 aprilie" },
+                  { icon: "⏰", text: "Ora: 19:00" },
                 ].map((item) => (
                   <div key={item.text} className="flex items-center gap-2 text-sm" style={{ fontFamily: "var(--font-jost), sans-serif", color: "#C8B89A" }}>
                     <span>{item.icon}</span>
@@ -465,8 +465,8 @@ export default function WebinarPage() {
               {/* Data + ora */}
               <div className="mb-8 flex flex-wrap justify-center gap-6">
                 {[
-                  { icon: "📅", text: "Data: x aprilie" },
-                  { icon: "⏰", text: "Ora: 18:00" },
+                  { icon: "📅", text: "Data: 20 aprilie" },
+                  { icon: "⏰", text: "Ora: 19:00" },
                 ].map((item) => (
                   <div key={item.text} className="flex items-center gap-2 text-sm" style={{ fontFamily: "var(--font-jost), sans-serif", color: "#C8B89A" }}>
                     <span>{item.icon}</span>
