@@ -31,7 +31,7 @@ export default function WebinarPage() {
         setLoading(false);
         return;
       }
-      router.push("/multumire");
+      router.push(`/multumire?name=${encodeURIComponent(name)}`);
     } catch {
       setError("Eroare de rețea. Încearcă din nou.");
       setLoading(false);
