@@ -122,7 +122,7 @@ export default function ProgramPage() {
                     borderRadius: "2px",
                   }}
                 >
-                  Înscrie-te — scrie pe WhatsApp →
+                  Înscrie-te acum — 487 lei →
                 </a>
                 <p className="text-xs" style={{ color: "#5C5545", fontFamily: "var(--font-jost), sans-serif" }}>
                   Garanție de returnare 15 zile. Fără risc.
