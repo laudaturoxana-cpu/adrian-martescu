@@ -128,7 +128,7 @@ export default function ProgramPage() {
 
               <div className="flex flex-col items-start gap-3">
                 <a
-                  href="https://wa.me/40765350339"
+                  href="https://buy.stripe.com/3cseWg6Dp7xLcQobIM"
                   className="block w-full text-center rounded-sm px-8 py-4 text-sm font-medium transition-all duration-200 hover:-translate-y-0.5 sm:w-auto"
                   style={{
                     background: "#B8892A",
@@ -596,7 +596,7 @@ export default function ProgramPage() {
               </p>
 
               <a
-                href="https://wa.me/40765350339"
+                href="https://buy.stripe.com/3cseWg6Dp7xLcQobIM"
                 className="inline-block rounded-sm px-10 py-4 text-sm font-medium transition-all duration-200 hover:-translate-y-0.5"
                 style={{
                   background: "#B8892A",
