@@ -104,7 +104,7 @@ function MultumireContent() {
           <p
             style={{ fontFamily: "var(--font-cormorant), serif", fontStyle: "italic", color: "#5C5545", fontSize: "17px" }}
           >
-            Nu trebuie să faci nimic altceva. Pur și simplu apare la webinar — cu curiozitatea ta. E suficient.
+            Nu trebuie să faci nimic altceva. Pur și simplu apari la webinar — cu curiozitatea ta. E suficient.
           </p>
         </div>
       </main>
