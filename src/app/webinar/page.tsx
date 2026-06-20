@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { LogoFull } from "@/components/LogoMark";
@@ -14,6 +14,12 @@ export default function WebinarPage() {
   const [phone, setPhone] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("track", "ViewContent", { content_name: "Webinar Oglinda Duala" });
+    }
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -30,6 +36,9 @@ export default function WebinarPage() {
         setError(data.error || "Eroare. Încearcă din nou.");
         setLoading(false);
         return;
+      }
+      if (typeof window !== "undefined" && window.fbq) {
+        window.fbq("track", "Lead");
       }
       router.push(`/multumire?name=${encodeURIComponent(name)}`);
     } catch {
