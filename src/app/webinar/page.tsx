@@ -39,6 +39,7 @@ export default function WebinarPage() {
       }
       if (typeof window !== "undefined" && window.fbq) {
         window.fbq("track", "Lead");
+        await new Promise((resolve) => setTimeout(resolve, 400));
       }
       router.push(`/multumire?name=${encodeURIComponent(name)}`);
     } catch {
